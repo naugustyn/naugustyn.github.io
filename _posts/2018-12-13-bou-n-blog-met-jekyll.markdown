@@ -42,4 +42,16 @@ git commit -m "initial commit."
 
 {% endhighlight shell %}
 
-Ons kan nou ons l&#234;ers "push" na ons host
+Ons kan nou ons l&#234;ers "push" na ons host duer die oorsprong as Github by te voeg. Maak seker die URL van die oorsprong is aangepas na jou eie repository:
+
+{% highlight shell %}
+
+git remote add origin git@github.com:naugustyn/naugustyn.github.io.git
+git push -u origin master
+
+{% endhighlight shell %}
+
+Jy behoort jou webwerf te sien as jy **[username].github.io** besoek.
+
+## Stap 3 - Stel jou DNS op
+
