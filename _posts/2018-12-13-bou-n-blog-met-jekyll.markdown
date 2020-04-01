@@ -19,11 +19,10 @@ Die voordeel van statiese webwerwe is dat hul eenvoudig is, geen databasis of CM
 
 Vir my handleiding gebruik ek Windows 10, maar jy na die webwerf hierbo verwys vir ander operating systems. 
 
-
 1. Laai Ruby+Devkit af van **[RubyInstaller Downloads](https://rubyinstaller.org/downloads/)**. Gebruik die standaardopsies.
-2. Hardloop die `code(ridk install)` stap op die laaste deel van die installasie. Die is nodig vir die installasie van gems met inheemse uitbreidings. Jy kan additionele informasie vind met betrekking tot die in die **[RubyInstaller Dokumentasie](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system)**.
-3. Maak n nuwe opdragprompt oop in die start menu so dat die verandering na die `code(PATH)` omgewing veranderlike effektief word. Installeer Jekyll en Bundler via: `cod(gem install jekyll bundler)`.
-4.  Kyk of Jekyll behoorlik geinstalleer is: `code(jekyll v)` 
+2. Hardloop die `ridk install` stap op die laaste deel van die installasie. Die is nodig vir die installasie van gems met inheemse uitbreidings. Jy kan additionele informasie vind met betrekking tot die in die **[RubyInstaller Dokumentasie](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system)**.
+3. Maak n nuwe opdragprompt oop in die start menu so dat die verandering na die `PATH` omgewing veranderlike effektief word. Installeer Jekyll en Bundler via: `gem install jekyll bundler`.
+4.  Kyk of Jekyll behoorlik geinstalleer is: `jekyll v` 
 
 ## Stap 2 - Stel jou repository op
 
