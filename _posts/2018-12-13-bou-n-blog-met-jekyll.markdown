@@ -30,7 +30,7 @@ Vir die benodig jy 'n rekening op Github - **[Join Github](https://github.com/jo
 
 Skep 'n nuwe Github repository wat jou l&#234;ers sal bevat of die webwerf bedien. My Github username is **naugustyn** so die repository se naam sal **naugustyn.github.io** wees. Maak seker jou repository naam is in kleinletters. 
 
-{% include image.html url="/assets/img/capture1.PNG" description="capture 1" %}
+{% include image.html url="assets/img/capture1.PNG" description="capture 1" %}
 
 In die repository watookal in die meester tak is word gepubliseer na **naugustyn.github.io**.
 
