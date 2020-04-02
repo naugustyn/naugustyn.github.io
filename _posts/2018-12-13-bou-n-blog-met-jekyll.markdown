@@ -30,6 +30,8 @@ Vir die benodig jy 'n rekening op Github - **[Join Github](https://github.com/jo
 
 Skep 'n nuwe Github repository wat jou l&#234;ers sal bevat of die webwerf bedien. My Github username is **naugustyn** so die repository se naam sal **naugustyn.github.io** wees. Maak seker jou repository naam is in kleinletters. 
 
+![repository](/assets/img/capture1.png){:class="img-responsive"}
+
 In die repository watookal in die meester tak is word gepubliseer na **naugustyn.github.io**.
 
 As jy nog nie het nie begin 'n repository waar jou webwerf l&#234;ers is:
