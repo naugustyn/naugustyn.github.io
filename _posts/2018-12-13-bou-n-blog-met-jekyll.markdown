@@ -89,7 +89,7 @@ Github Pages ondersteun nog nie SSL vir pasgemaakte domains wat gewoonlik HTTP/2
 
 CloudFlare's universele SSL opsie ons toelaat om getekende SSL sertifikate aan besoekers te gee. Dit gee ons die voordele van HTTP/2 en **[moontlik jou soekenjinranglys verbeter](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html)**.
 
-{% include image.html url="/assets/img/cloudflare_ssl_modes.PNG" description=" " %}
+{% include image.html url="/assets/img/cloudflare_ssl_modes.png" description=" " %}
 
 In die *Crypt tab* van jou CloudFlare rekening moet jy seker maak jou SSL mode is gestel na *Full* en nie *Full (Strict)*:
 
