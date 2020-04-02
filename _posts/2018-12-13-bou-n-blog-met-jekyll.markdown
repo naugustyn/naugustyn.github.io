@@ -30,7 +30,7 @@ Vir die benodig jy 'n rekening op Github - **[Join Github](https://github.com/jo
 
 Skep 'n nuwe Github repository wat jou l&#234;ers sal bevat of die webwerf bedien. My Github username is **naugustyn** so die repository se naam sal **naugustyn.github.io** wees. Maak seker jou repository naam is in kleinletters. 
 
-{% include image.html url="assets/img/capture1.PNG" description="repository" %}
+{% include image.html url="/assets/img/capture1.PNG" description="repository" %}
 
 In die repository watookal in die meester tak is word gepubliseer na **naugustyn.github.io**.
 
@@ -56,4 +56,24 @@ git push -u origin master
 Jy behoort jou webwerf te sien as jy **[username].github.io** besoek.
 
 ## Stap 3 - Stel jou DNS op
+
+Registreer 'n domain en **[dit by jou CloudFlare rekening bygevoeg](https://support.cloudflare.com/hc/en-us/articles/201720164-Step-2-Create-a-CloudFlare-account-and-add-a-website)**.
+
+Om dit moontlik te maak vir Github om verkeer te aanvaar van jou domain moet jy 'n CNAME l&#234;er in jou repository maak wat die hostname bevat om verkeer te aanvaar. 
+
+Die volgende r&#235;els tel:
+
+- As die CNAME l&#234;er byvoorbeeld.co.za bevat dan sal www.byvoorbeeld.co.za na byvoorbeeld.co.za herlei.
+- As die CNAME l&#234;er www.byvoorbeeld.co.za bevat sal byvoorbeeld.co.za na www.byvoorbeeld.co.za herlei.
+
+Die Git repository wat ons in die vorige afdeling geskep het voeg 'n CNAME file by and "commit" jou veranderinge:
+
+{% highlight shell %}
+
+echo "www.naugustyn.me" > CNAME
+git add -A
+git commit -m "CNAME file bygelas."
+git push origin master
+
+{% endhighlight shell %}
 
