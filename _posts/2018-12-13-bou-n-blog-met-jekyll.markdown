@@ -113,4 +113,4 @@ CloudFlare het 'n "Cache Everything" opsie in die *Page Rules*. Vir statiese web
 
 Wanneer jy jou webwerf dien kan jy die *Purge Cache* opsie in die *Cache tab* op CloudFlare gebruik om die cached weergawe van jou webwerf te verwyder. 
 
-Die volgendeis vertaal van **[Secure and fast GitHub Pages with CloudFlare](https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/)**
+Die volgende is vertaal van **[Secure and fast GitHub Pages with CloudFlare](https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/)**
