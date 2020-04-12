@@ -19,14 +19,14 @@ Die voordeel van statiese webwerwe is dat hul eenvoudig is, geen databasis of CM
 
 Vir my handleiding gebruik ek Windows 10, maar jy na die webwerf hierbo verwys vir ander operating systems. 
 
-1. Laai Ruby+Devkit af van **[RubyInstaller Downloads](https://rubyinstaller.org/downloads/)**. Gebruik die standaardopsies.
-2. Hardloop die `ridk install` stap op die laaste deel van die installasie. Die is nodig vir die installasie van gems met inheemse uitbreidings. Jy kan additionele informasie vind met betrekking tot die in die **[RubyInstaller Dokumentasie](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system)**.
+1. Laai Ruby+Devkit af van **[RubyInstaller Downloads](https://rubyinstaller.org/downloads/){:target="_blank"}**. Gebruik die standaardopsies.
+2. Hardloop die `ridk install` stap op die laaste deel van die installasie. Die is nodig vir die installasie van gems met inheemse uitbreidings. Jy kan additionele informasie vind met betrekking tot die in die **[RubyInstaller Dokumentasie](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system){:target="_blank"}**.
 3. Maak n nuwe opdragprompt oop in die start menu so dat die verandering na die `PATH` omgewing veranderlike effektief word. Installeer Jekyll en Bundler via: `gem install jekyll bundler`.
 4.  Kyk of Jekyll behoorlik geinstalleer is: `jekyll v` 
 
 ## Stap 2 - Stel jou repository op
 
-Vir die benodig jy 'n rekening op Github - **[Join Github](https://github.com/join)**.
+Vir die benodig jy 'n rekening op Github - **[Join Github](https://github.com/join){:target="_blank"}**.
 
 Skep 'n nuwe Github repository wat jou l&#234;ers sal bevat of die webwerf bedien. My Github username is **naugustyn** so die repository se naam sal **naugustyn.github.io** wees. Maak seker jou repository naam is in kleinletters. 
 
@@ -57,7 +57,7 @@ Jy behoort jou webwerf te sien as jy **[username].github.io** besoek.
 
 ## Stap 3 - Stel jou DNS op
 
-Registreer 'n domain en **[voeg dit by jou CloudFlare rekening](https://support.cloudflare.com/hc/en-us/articles/201720164-Step-2-Create-a-CloudFlare-account-and-add-a-website)**.
+Registreer 'n domain en **[voeg dit by jou CloudFlare rekening](https://support.cloudflare.com/hc/en-us/articles/201720164-Step-2-Create-a-CloudFlare-account-and-add-a-website){:target="_blank"}**.
 
 Om dit moontlik te maak vir Github om verkeer te aanvaar van jou domain moet jy 'n CNAME l&#234;er in jou repository maak wat die hostname bevat om verkeer te aanvaar. 
 
@@ -81,13 +81,13 @@ Ons can die rekords bylas om na ons DNS rekords wys na ons Githup Pages rekening
 
 {% include image.html url="/assets/img/capture2.PNG" description=" " %}
 
-Jy can **[nuuste lys van IP adresse](https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site)** vind op die Github Page dokumentasie.
+Jy can **[nuuste lys van IP adresse](https://help.github.com/en/github/working-with-github-pages/managing-a-custom-domain-for-your-github-pages-site){:target="_blank"}** vind op die Github Page dokumentasie.
 
 ## Stap 3 - SSL
 
-Github Pages ondersteun nog nie SSL vir pasgemaakte domains wat gewoonlik HTTP/2 sal uit kanselleer. Terwyl die HTTP/2 spesifikasie (**[RFC 7540](https://tools.ietf.org/html/rfc7540)**) toelaat vir HTTP/2 oor gewone teks HTTP/2. Alle popul&#234;re blaaiers benodig HTTP/2 om te hardloop bo TLS bedoelend HTTP/2 net bo-op HTTPS kan hardloop die de-facto standaard is. 
+Github Pages ondersteun nog nie SSL vir pasgemaakte domains wat gewoonlik HTTP/2 sal uit kanselleer. Terwyl die HTTP/2 spesifikasie (**[RFC 7540](https://tools.ietf.org/html/rfc7540){:target="_blank"}**) toelaat vir HTTP/2 oor gewone teks HTTP/2. Alle popul&#234;re blaaiers benodig HTTP/2 om te hardloop bo TLS bedoelend HTTP/2 net bo-op HTTPS kan hardloop die de-facto standaard is. 
 
-CloudFlare's universele SSL opsie ons toelaat om getekende SSL sertifikate aan besoekers te gee. Dit gee ons die voordele van HTTP/2 en **[moontlik jou soekenjinranglys verbeter](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html)**.
+CloudFlare's universele SSL opsie ons toelaat om getekende SSL sertifikate aan besoekers te gee. Dit gee ons die voordele van HTTP/2 en **[moontlik jou soekenjinranglys verbeter](https://webmasters.googleblog.com/2014/08/https-as-ranking-signal.html){:target="_blank"}**.
 
 {% include image.html url="/assets/img/cloudflare_ssl_modes.png" description=" " %}
 
@@ -112,5 +112,3 @@ CloudFlare het 'n "Cache Everything" opsie in die *Page Rules*. Vir statiese web
 {% include image.html url="/assets/img/capture6.PNG" description=" " %}
 
 Wanneer jy jou webwerf dien kan jy die *Purge Cache* opsie in die *Cache tab* op CloudFlare gebruik om die cached weergawe van jou webwerf te verwyder. 
-
-Die volgendeis vertaal van **[Secure and fast GitHub Pages with CloudFlare](https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/)**
