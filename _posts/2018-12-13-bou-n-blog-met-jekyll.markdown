@@ -3,6 +3,7 @@ layout: post
 title:  "Bou 'n blog met Jekyll"
 date:   2018-12-13 12:46:27 +0200
 categories: jekyll update
+comments: true
 ---
 
 ## Wat is Jekyll?
