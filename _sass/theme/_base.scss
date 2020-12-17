@@ -109,10 +109,8 @@
  
    &:hover {
      color: $text-color;
-             transition: background-color 1s ease-in;
-             -webkit-transition: background-color 1s ease-in;
-             -moz-transition: background-color 1s ease-in;
-             background-color: rgba(255,165,0,0.35);
+     text-decoration: underline;
+	 stroke: yellow;
    }
  
    .social-media-list &:hover {
@@ -126,16 +124,6 @@
    .site-title &:hover {
     text-decoration: none;
   }
-  
-  a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-                 transition: background-color 1s ease-in;
-             -webkit-transition: background-color 1s ease-in;
-             -moz-transition: background-color 1s ease-in;
-             background-color: rgba(255,165,0,0.35);
-}
-
  }
  
  
