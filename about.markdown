@@ -12,7 +12,7 @@ Hallo daar! Ek's **Nathan** - 'n data ingenieur, ontwikkelaar en tegnologie-ento
 
 Ek werk met:
 
-- **Data & Ingenieurswese** - Gebruik **C#, SQL, ML.NET** en and tech om **data slimmer te maak**.
+- **Data & Ingenieurswese** - Gebruik **C#, SQL, ML.NET** en ander tech om **data slimmer te maak**.
 - **Sagteware-ontwikkeling** - Bou **Windows apps, web platforms en backend-integrasies** met **.NET, Spring Boot, PostgreSQL en Flutter**
 - **Sekuriteit & Opensource Tools** - Verbeter **OS en huisnetwerke** se veiligheid.
 - **Gemeenskapsplatforms** – Werk aan **hiperlokale markte en desentrale mikroversekering** vir gemeenskapsontwikkeling.
@@ -20,7 +20,7 @@ Ek werk met:
 ## Kom Gesels  
 
 Lief vir tech, data of gemeenskapsoplossings? Kom sê **hallo**!  
-📌 **LinkedIn** – [Klik hier](https://linkedin.com)  
-📌 **GitHub** – [My projekte](https://github.com)  
+📌 **LinkedIn** – [Klik hier](https://www.linkedin.com/in/nathanjohnaugustyn/)  
+📌 **GitHub** – [My projekte](https://github.com/naugustyn)  
 
 Dankie dat jy kom inloer het! 🚀 
