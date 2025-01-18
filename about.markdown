@@ -4,15 +4,23 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+# Oor My
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Hallo daar! Ek's **Nathan** - 'n data ingenieur, ontwikkelaar en tegnologie-entoesias wat mal is oor **desentralisasie, kuberveiligheid en slim oplossings. Ek bou goed, ek breek goed (op 'n slim manier 😆), en ek deel my kennis hier op my blog.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+# Wat Ek Doen
 
+Ek werk met:
 
-[jekyll-organization]: https://github.com/jekyll
+- **Data & Ingenieurswese** - Gebruik **C#, SQL, ML.NET** en and tech om **data slimmer te maak**.
+- **Sagteware-ontwikkeling** - Bou **Windows apps, web platforms en backend-integrasies** met **.NET, Spring Boot, PostgreSQL en Flutter**
+- **Sekuriteit & Opensource Tools** - Verbeter **OS en huisnetwerke** se veiligheid.
+- **Gemeenskapsplatforms** – Werk aan **hiperlokale markte en desentrale mikroversekering** vir gemeenskapsontwikkeling.
+
+## Kom Gesels  
+
+Lief vir tech, data of gemeenskapsoplossings? Kom sê **hallo**!  
+📌 **LinkedIn** – [Klik hier](https://linkedin.com)  
+📌 **GitHub** – [My projekte](https://github.com)  
+
+Dankie dat jy kom inloer het! 🚀 
