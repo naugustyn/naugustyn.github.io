@@ -3,9 +3,7 @@ layout: page
 permalink: /oor-my/
 ---
 
-# Hallo daar! 👋  
-
-Ek’s **Nathan** – ’n data-ingenieur, ontwikkelaar en tegnologie-entoesias met ’n passie vir **desentralisasie, kuberveiligheid en slim oplossings**. Ek bou goed, ek breek goed (op ’n slim manier 😆), en ek deel my kennis hier op my blog.
+Hallo daar! 👋 Ek’s **Nathan** – ’n data-ingenieur, ontwikkelaar en tegnologie-entoesias met ’n passie vir **desentralisasie, kuberveiligheid en slim oplossings**. Ek bou goed, ek breek goed (op ’n slim manier 😆), en ek deel my kennis hier op my blog.
 
 &nbsp;
 
