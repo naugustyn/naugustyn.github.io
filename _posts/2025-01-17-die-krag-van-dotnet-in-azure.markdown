@@ -1,8 +1,10 @@
 ---
 layout: post
 title:  ".NET en Azure – 'n Power Kombinasie vir Wolkontwikkeling"
+toc: false
 date:   2025-01-17 20:06:47 +0200
-categories: azure, .net
+categories: [Azure]
+tags: [Azure, .NET]
 ---
 
 Wolkrekenaars verander hoe ons software bou, en **Microsoft Azure** is nou een van die groot name as dit kom by hosting, ontplooiing en bestuur van toepassings. Vir **.NET devs** is dit 'n goldmine – jy kry ‘n hele ekosisteem wat moeiteloos werk met jou gunsteling tools en raamwerke.  
@@ -73,7 +75,7 @@ Bied buigsame wolkberging vir **blobs, files, queues en tables** – maklik en b
 
 ## **5. Containers & Microservices met Azure Kubernetes Service**  
 
-### **🐳 Docker + .NET = Perfekte Paar**  
+### **Docker + .NET = Perfekte Paar**  
 Docker verseker konsekwentheid van jou app tussen dev, toets en produksie.  
 
 ### **Azure Kubernetes Service (AKS)**  

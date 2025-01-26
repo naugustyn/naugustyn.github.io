@@ -1,34 +1,36 @@
 ---
 layout: default
+title: "Tuisblad"
 ---
 
-<div class="home">
-  {%- if page.title -%}
-    <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
+<div class="homepage-container">
+  
+  <!-- Featured Post -->
+  {% if site.posts.size > 0 %}
+    {% assign featured = site.posts | first %}
+    <div class="featured-post">
+      <h2>Uitgeligte Artikel</h2>
+      <h3><a href="{{ featured.url }}">{{ featured.title }}</a></h3>
+      <p>{{ featured.excerpt | strip_html | truncate: 180 }}</p>
+    </div>
+  {% else %}
+    <p>Geen artikels beskikbaar nie.</p>
+  {% endif %}
 
-  {{ content }}
-
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Blogplasings" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
+  <!-- Latest Posts -->
+  <h2>Onlangse Artikels</h2>
+  <ul class="latest-posts">
+    {% assign afrikaans_months = "Jan,Feb,Mrt,Apr,Mei,Jun,Jul,Aug,Sep,Okt,Nov,Des" | split: "," %}
+    {% for post in site.posts limit:5 %}
+      {% assign month_index = post.date | date: "%m" | minus: 1 %}
       <li>
-        {%- assign date_format = site.minima.date_format | default: "%d %B %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span class="date">{{ post.date | date: "%-d" }} {{ afrikaans_months[month_index] }} {{ post.date | date: "%Y" }}</span>
+        <p>{{ post.excerpt | strip_html | truncate: 120 }}</p>
       </li>
-      {%- endfor -%}
-    </ul>
+    {% endfor %}
+  </ul>
 
-    <p class="rss-subscribe">Teken in via <a href="{{ "/feed.xml" | relative_url }}">RSS</a></p>
-  {%- endif -%}
+
 
 </div>

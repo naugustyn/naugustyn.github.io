@@ -1,0 +1,28 @@
+{% assign headers = content | markdownify | split: "<h2>" %}
+
+  {% if headers.size > 1 %}
+    <div class="toc-container">
+      <h3>Inhoudsopgawe</h3>
+      <ul>
+        {% for heading in headers offset:1 %}
+          {% assign heading_title = heading | split: "</h2>" | first %}
+          {% assign heading_id = heading_title | strip_html | strip | slugify %}
+          <li><a href="#{{ heading_id }}">{{ heading_title }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  {% else %}
+    <p><strong>Geen opskrifte gevind nie.</strong></p>
+  {% endif %}
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var tocHeader = document.querySelector(".toc-container h3");
+      if (tocHeader) {
+        tocHeader.addEventListener("click", function () {
+          this.parentElement.classList.toggle("active");
+        });
+      }
+    });
+  </script>
+  

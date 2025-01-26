@@ -1,27 +1,60 @@
 ---
 layout: default
 ---
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="post-header">
+  <header class="post-header"> 
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
+        {%- assign afrikaans_months = "Jan,Feb,Mrt,Apr,Mei,Jun,Jul,Aug,Sep,Okt,Nov,Des" | split: "," -%}
+        {%- assign month_index = page.date | date: "%m" | minus: 1 -%}
+        {{ page.date | date: "%-d" }} {{ afrikaans_months[month_index] }} {{ page.date | date: "%Y" }}        
       </time>
       {%- if page.author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+      {%- endif -%}
+    </p>
   </header>
+
+  {% if page.toc %}
+  <div class="toc-container">
+    <h3>Inhoudsopgawe</h3>
+    {% include toc.html html=content %}
+  </div>
+  {% endif %}
+
+  {% assign words = content | number_of_words %}
+  {% assign minutes = words | divided_by: 200 | plus: 1 %}
+  <p class="reading-time"><strong>Leesduur:</strong> {{ minutes }} min</p>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+  <div class="share-buttons">
+    <a href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}" target="_blank">🕊 Deel op Twitter</a>
+    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank">💼 Deel op LinkedIn</a>
+    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank">📘 Deel op Facebook</a>
+  </div>
+
+  <div class="author-bio">
+    <img src="/assets/images/profile.svg" alt="Nathan-John Augustyn">
+    <p><strong>Nathan-John Augustyn</strong> is 'n Business Analyst en IT-spesialis passievol oor tegnologie, desentralisasie, en gemeenskapsbou.</p>
+    <p><a href="/oor-my">Lees meer oor my →</a></p>
+  </div>  
+
+  <h3>Verwante Artikels</h3>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
