@@ -1,19 +1,17 @@
 <footer class="site-footer">
-  <div class="wrapper">
+    <div class="wrapper">
+        {% assign quotes = site.data.quotes.quotes %}
+{% assign random_quote = quotes | sample %}
 
-      <!-- Ko-Fi Donation Button -->
-      <div class="donation-container">
-          <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
-          <script type='text/javascript'>
-              kofiwidget2.init('Ondersteun my op Ko-fi', '#72a4f2', 'K3K619LUB1');
-              kofiwidget2.draw();
-          </script> 
-      </div>    
+<div id="thought-of-the-day">
+  Gedagte van die dag: {{ random_quote }}
+</div>
 
-      <!-- Footer Bottom: Copyright -->
-      <div class="footer-bottom">
-          <p>Gemaak met liefde en Jekyll. 💻🇿🇦</p>
-          <p>© {{ site.time | date: '%Y' }} <a href="{{ '/' | relative_url }}">{{ site.title }}</a>. Alle regte voorbehou.</p>
-      </div>
-  </div>
-</footer>
+        <!-- Footer Bottom: Copyright -->
+        <div class="footer-bottom">
+            <p>Gemaak met liefde en Jekyll. 💻🇿🇦</p>
+            <p>© {{ site.time | date: '%Y' }} <a href="{{ '/' | relative_url }}">{{ site.title }}</a>. Alle regte voorbehou.</p>
+        </div>
+    </div>
+  </footer>
+  

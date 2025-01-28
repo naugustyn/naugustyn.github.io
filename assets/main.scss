@@ -20,15 +20,33 @@
   width: 100%;
   z-index: 1000;
   padding: 15px 0;
+  display: flex;
+  justify-content: center; /* Center logo */
+  align-items: center;
 }
 
-/* Logo / Site Title */
-.site-title a {
-  font-family: 'Merriweather', serif;
-  font-size: 24px;
-  font-weight: bold;
-  color: #222;
-  text-decoration: none;
+/* Logo Styling */
+.logo {
+  width: 50px;
+  height: 50px;
+  display: block;
+  transition: fill 0.3s ease-in-out;
+  color: var(--logo-color);
+  margin: 0 auto;
+}
+
+/* Default Light Mode */
+:root {
+  --logo-color: #222;
+}
+
+/* Dark Mode Logo */
+body.dark-mode {
+  --logo-color: #fff;
+}
+
+.logo path {
+  fill: var(--logo-color);
 }
 
 /* Navigation */
@@ -46,20 +64,8 @@
   padding-bottom: 5px;
 }
 
-.site-nav a::after {
-  content: "";
-  display: block;
-  height: 2px;
-  width: 0;
-  background: black;
-  transition: width 0.3s ease-in-out;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-.site-nav a:hover::after {
-  width: 100%;
+.site-nav a:hover {
+  color: #007bff;
 }
 
 /* Mobile Navigation */
@@ -72,23 +78,16 @@
 }
 
 @media screen and (max-width: 768px) {
-  .wrapper {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .site-nav {
     display: none;
     flex-direction: column;
     width: 100%;
     padding-top: 10px;
   }
-
   .menu-toggle {
     display: block;
     align-self: flex-end;
   }
-
   .site-nav.active {
     display: flex;
   }
@@ -101,274 +100,35 @@ body {
   background-color: #f8f9fa;
   font-size: 18px;
   line-height: 1.7;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-h1, h2, h3 {
-  font-family: 'Merriweather', serif;
-  font-weight: bold;
-}
-
-h1 {
-  font-size: 36px;
-  border-bottom: 3px solid #222;
-  padding-bottom: 10px;
-}
-
-h2 {
-  font-size: 28px;
-}
-
-h3 {
-  font-size: 22px;
-}
-
-/* === Featured Article === */
-.featured-post {
-  background: #f9f9f9;
-  padding: 20px;
-  border-left: 4px solid #007bff;
-  margin-bottom: 20px;
-}
-
-/* === Blog Post Previews === */
-.post-preview {
-  border-bottom: 1px solid #ddd;
-  padding: 20px 0;
-}
-
-.post-preview h2 {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.post-preview a {
-  text-decoration: none;
-  color: #222;
-}
-
-.post-preview a:hover {
-  text-decoration: underline;
-}
-
-/* === Footer Styling === */
-.site-footer {
-  background-color: #f8f9fa;
-  text-align: center;
-  padding: 20px 0;
-  border-top: 2px solid #222;
-  font-size: 16px;
-}
-
-/* Footer Logo */
-.footer-logo {
-  margin-bottom: 10px;
-}
-
-.footer-logo svg {
-  width: 40px;
-  height: 40px;
-}
-
-/* Footer Info */
-.footer-info {
-  margin-bottom: 10px;
-  color: #333;
-  font-size: 14px;
-  line-height: 1.5;
-}
-
-/* Donation Section */
-.donation-container {
-  text-align: center;
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.donation-container img {
-  width: 150px;
-  height: auto;
-}
-
-/* === Table of Contents (TOC) === */
-.toc-container {
-  background: #f9f9f9;
-  padding: 15px;
-  border-left: 4px solid #222;
-  margin-bottom: 20px;
-}
-
-.toc-container h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.toc-container ul {
-  list-style: none;
-  padding: 0;
-}
-
-.toc-container li {
-  margin-bottom: 5px;
-}
-
-.toc-container a {
-  text-decoration: none;
-  color: #222;
-}
-
-.toc-container a:hover {
-  text-decoration: underline;
-}
-
-/* === Breadcrumb Styling === */
-.breadcrumbs {
-  font-size: 16px;
-  color: #555;
-  margin-bottom: 20px;
-}
-
-.breadcrumbs a {
-  text-decoration: none;
-  color: #222;
-  font-weight: bold;
-}
-
-.breadcrumbs a:hover {
-  text-decoration: underline;
-  color: #777;
-}
-
-.breadcrumbs span {
-  color: #777;
-}
-
-/* === Dark Mode === */
+/* Dark Mode Support */
 body.dark-mode {
   background-color: #121212;
   color: #ffffff;
 }
 
-/* Ensure all text and links are visible */
 body.dark-mode a {
-  color: #87ceeb; /* Light blue for contrast */
+  color: #87ceeb;
 }
 
 body.dark-mode a:hover {
-  color: #5ca0d1; /* Slightly darker blue for hover */
+  color: #5ca0d1;
 }
 
-/* Header, Footer & Navigation */
 body.dark-mode .site-header,
-body.dark-mode .footer,
-body.dark-mode .site-footer,
-body.dark-mode .post-header {
+body.dark-mode .site-footer {
   background-color: #1e1e1e;
   border-bottom: 2px solid #555;
 }
 
 body.dark-mode .site-title a {
-  color: #ffffff; /* Ensure header title stays visible */
+  color: #ffffff;
 }
 
 body.dark-mode .site-nav a {
   color: #dddddd;
-}
-
-body.dark-mode .site-nav a:hover {
-  color: #ffffff;
-}
-
-/* Breadcrumbs */
-body.dark-mode .breadcrumbs {
-  color: #bbbbbb;
-}
-
-body.dark-mode .breadcrumbs a {
-  color: #87ceeb;
-}
-
-body.dark-mode .breadcrumbs a:hover {
-  color: #5ca0d1;
-}
-
-/* "Uitgeligte Artikel" (Featured Article) */
-body.dark-mode .featured-post {
-  background: #1e1e1e;
-  border-bottom: 2px solid #444;
-  color: #ffffff;
-}
-
-/* Post Content */
-body.dark-mode .post-content {
-  background: #1e1e1e;
-  color: #e0e0e0;
-}
-
-/* Table of Contents */
-body.dark-mode .toc-container {
-  background: #222;
-  border-left: 4px solid #444;
-}
-
-/* Sidebar / Widgets */
-body.dark-mode .widget {
-  background: #1e1e1e;
-  color: #ffffff;
-  border: 1px solid #444;
-}
-
-/* Reading Time */
-body.dark-mode .reading-time {
-  color: #aaaaaa;
-}
-
-/* Related Posts */
-body.dark-mode .related-posts a {
-  color: #87ceeb;
-}
-
-body.dark-mode .related-posts a:hover {
-  color: #5ca0d1;
-}
-
-/* Share Buttons */
-body.dark-mode .share-buttons a {
-  background-color: #333;
-  color: #ffffff;
-}
-
-body.dark-mode .share-buttons a:hover {
-  background-color: #555;
-}
-
-/* Author Bio */
-body.dark-mode .author-bio {
-  background: #1e1e1e;
-  border-top: 1px solid #444;
-}
-
-body.dark-mode .author-bio p {
-  color: #dddddd;
-}
-
-/* Footer Improvements */
-body.dark-mode .footer-bottom {
-  color: #aaaaaa;
-}
-
-body.dark-mode .footer-logo svg {
-  fill: #ffffff; /* Ensure the logo is visible */
-}
-
-/* Ko-Fi & Newsletter */
-body.dark-mode .donation-container,
-body.dark-mode .newsletter-form {
-  background: #1e1e1e;
-  border: 1px solid #444;
 }
 
 /* Dark Mode Toggle */
@@ -386,95 +146,79 @@ body.dark-mode .newsletter-form {
 }
 
 
-/* === Reading Time === */
-.reading-time {
+/* === Footer Styling === */
+.site-footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 2px solid #222;
   font-size: 16px;
-  color: #666;
-  margin-bottom: 10px;
-  font-style: italic;
 }
 
-/* === Related Posts === */
-.related-posts {
-  list-style: none;
-  padding: 0;
+body.dark-mode .site-footer {
+  background-color: #1e1e1e;
+  color: #ffffff;
 }
 
-.related-posts li {
-  margin-bottom: 5px;
+/* Footer Social Links */
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
 }
 
-.related-posts a {
+.footer-social a {
+  display: inline-block;
   text-decoration: none;
-  color: #007bff;
-}
-
-.related-posts a:hover {
-  text-decoration: underline;
-}
-
-/* === Author Bio === */
-.author-bio {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #222;
+  color: white;
   display: flex;
   align-items: center;
-  padding: 10px;
-  border-top: 1px solid #ddd;
-  margin-top: 20px;
+  justify-content: center;
+  transition: background 0.3s;
 }
 
-.author-bio img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
+.footer-social a:hover {
+  background: #007bff;
 }
 
-/* === Social Share Buttons === */
+body.dark-mode .footer-social a {
+  background: #444;
+}
+
+body.dark-mode .footer-social a:hover {
+  background: #5ca0d1;
+}
+
+/* === Social Sharing Buttons === */
 .share-buttons {
-  margin-top: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 20px 0;
 }
 
 .share-buttons a {
   text-decoration: none;
   color: white;
-  background-color: #333;
-  padding: 8px 12px;
+  background-color: #00050a;
+  padding: 10px 15px;
   border-radius: 5px;
-  margin: 5px;
-  display: inline-block;
+  transition: background 0.3s;
 }
 
 .share-buttons a:hover {
-  background-color: #555;
+  background-color: #0056b3;
 }
 
-/* === Homepage Layout === */
-.homepage-container {
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
+body.dark-mode .share-buttons a {
+  background-color: #444;
 }
 
-/* === Categories === */
-.categories-list {
-  list-style: none;
-  padding: 0;
-}
-
-.categories-list li {
-  display: inline-block;
-  margin: 5px;
-}
-
-.categories-list a {
-  background: #007bff;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.categories-list a:hover {
-  background: #0056b3;
+body.dark-mode .share-buttons a:hover {
+  background-color: #5ca0d1;
 }
