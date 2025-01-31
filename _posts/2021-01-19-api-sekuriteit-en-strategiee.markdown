@@ -2,8 +2,8 @@
 layout: post
 title: "Gevorderde API Sekuriteit – Hoe Om Jou APIs Te Verdedig"
 toc: false
-date: 2025-01-20 20:06:47 +0200
-categories: [API]
+date: 2021-01-20 20:06:47 +0200
+categories: [sekuriteit]
 tags: [API, Security, Best Practices]
 --- 
 

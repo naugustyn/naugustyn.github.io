@@ -2,8 +2,8 @@
 layout: post
 title:  ".NET en Azure – 'n Power Kombinasie vir Wolkontwikkeling"
 toc: false
-date:   2025-01-17 20:06:47 +0200
-categories: [Azure]
+date:   2021-01-17 20:06:47 +0200
+categories: [wolkontwikkeling]
 tags: [Azure, .NET]
 ---
 

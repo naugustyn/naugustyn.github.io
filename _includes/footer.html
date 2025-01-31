@@ -1,17 +1,20 @@
 <footer class="site-footer">
-    <div class="wrapper">
-        {% assign quotes = site.data.quotes.quotes %}
-{% assign random_quote = quotes | sample %}
+  <div class="wrapper">
+      
+      <!-- Thought of the Day Section -->
+      {% assign quotes = site.data.quotes.quotes %}
+      {% assign random_quote = quotes | sample %}
+      
+      <div id="thought-of-the-day">
+          <blockquote>
+              "{{ random_quote }}"
+          </blockquote>
+      </div>
 
-<div id="thought-of-the-day">
-  Gedagte van die dag: {{ random_quote }}
-</div>
-
-        <!-- Footer Bottom: Copyright -->
-        <div class="footer-bottom">
-            <p>Gemaak met liefde en Jekyll. 💻🇿🇦</p>
-            <p>© {{ site.time | date: '%Y' }} <a href="{{ '/' | relative_url }}">{{ site.title }}</a>. Alle regte voorbehou.</p>
-        </div>
-    </div>
-  </footer>
-  
+      <!-- Footer Bottom: Copyright -->
+      <div class="footer-bottom">
+          <p>Gemaak met liefde en Jekyll. 💻🇿🇦</p>
+          <p>© {{ site.time | date: '%Y' }} <a href="{{ '/' | relative_url }}">{{ site.title }}</a>. Alle regte voorbehou.</p>
+      </div>
+  </div>
+</footer>

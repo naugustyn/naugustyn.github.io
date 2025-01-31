@@ -222,3 +222,86 @@ body.dark-mode .share-buttons a {
 body.dark-mode .share-buttons a:hover {
   background-color: #5ca0d1;
 }
+
+.hero {
+  background: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+.cta {
+  display: inline-block;
+  background: #0073e6;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .homepage-container {
+    padding: 10px;
+  }
+  .latest-posts li {
+    font-size: 14px;
+  }
+}
+
+/* Categories Container */
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+/* Each Category Box */
+.category-box {
+  background: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.3s;
+  min-width: 120px;
+}
+
+.category-box a {
+  text-decoration: none;
+  color: #333;
+}
+
+.category-box .count {
+  color: #888;
+  font-size: 0.9em;
+}
+
+/* Hover Effect */
+.category-box:hover {
+  background: #0073e6;
+  color: white;
+}
+
+.category-box:hover a {
+  color: white;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+  .categories-container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .category-box {
+      flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .category-box {
+      flex: 1 1 100%;
+  }
+}
+
