@@ -3,7 +3,7 @@ layout: post
 title: "Django Unchained!"
 date: 2021-02-03
 toc: false
-categories: [webontwikkeling]
+categories: [ontwikkeling]
 tags: [Python, Django]
 ---
 

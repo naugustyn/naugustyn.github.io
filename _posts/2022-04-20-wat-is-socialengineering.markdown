@@ -23,7 +23,7 @@ Voorbeelde sluit in:
 - **Pretexting:** Skep 'n "pretext" - ’n geloofwaardige storie – om jou te flous (bv. “Ek is jou kollega in HR, ek moet jou ID hê om jou salaris op te dateer.”).
 
 ## 2. Menslike Swakplekke: Die Kern
-Emosies kan ons laat struikel. Ons almal wil graag van hulp wees, of ons voel dalk skuldig, bang, of oorhaastig. Dis presies waar 'n social engineer intree en jou in tjekmat sit!
+Emosies kan ons laat struikel. Ons almal wil graag van hulp wees, of ons voel dalk skuldig, bang, of oorhaastig. Dis presies waar 'n social engineer intree en jou in tjekmate sit!
 
 **Van die algemeenste taktieke:**
 
